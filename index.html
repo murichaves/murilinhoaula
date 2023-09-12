@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  div {
+  background-color: white;
+  width: 700px;
+  margin-right: 500px;
+  margin-left:400px;
+
+}
+ul {
+    list-style-type: none;
+    text-align:center;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d3d3d3;
+    border-radius: 10px 10px;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #808080;
+}
+
+.active {
+    background-color: #111;
+}
+h1.classe1 {
+    text-align: left;
+    font-family: Calibri;
+    color: green;
+    font-size: 45px
+}
+h1.classe2 {
+    text-align: left;
+    font-family: Calibri;
+    color: black;
+    font-size: 40px
+}
+
+p1.classe3 {
+    text-align: justify;
+    font-family: Calibri;
+    color: black;
+    font-size:20px;
+}
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;;
+    margin: 10px;
+    transition: background .3s;
+    border-radius: 10px
+}
+
+.btnV {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 10px;
+    margin: 10px;
+    background: #90ee90;
+}
+.btnA {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 10px;
+    margin: 10px;
+    background: #add8e6;
+}
+
+.btnP {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 10px;
+    margin: 10px;
+    background: #808080;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="recordes.html">Recordes</a></li>
+  <li><a href="jogo.html">Jogue agora</a></li>
+
+</ul>
+
+<div><h1 class="classe1"> Jogo da cobrinha </h1></div>
+   <div> <h1 class="classe2">Origens nos arcades:</h1> </div>
+    <div> <p1 class="classe3"> O conceito do jogo da cobrinha já existia bem antes da era dos celulares. Ele apareceu pela primeira vez em 1976 no jogo para arcades Blockade, desenvolvido pela Gremlin Industries. Diferente do game da Nokia, Blockade foi feito para dois jogadores. Cada usuário controla uma cobrinha que vai se expandindo no mapa, criando uma barreira, e quem sobreviver mais tempo sem se chocar com uma barreira vence a partida.</p1><br><br><br>
+<img id="myImage" src="Foto-jogo.png" width="700" height="350" align=center>
+<br><br>
+ <button class="btn" onclick="document.getElementById('myImage').src='/imagens/jogo-1.webp'">Mostrar imagem</button>
+<button class="btn" onclick="document.getElementById('myImage').src='/imagens/Jogo-foto.png'">Ver outra imagem</button>
+   <h1 class="classe2">O primeiro Snake saiu em 1997:</h1>
+    <p1 class="classe3">O jogo da cobrinha da Nokia nasceu em 1997 no celular Nokia 6110. Essa era uma versão bem primária do jogo, em que a cobrinha era apenas uma linha na tela que ia se expandindo ao coletar pequenos quadrados. A sua versão mais famosa foi Snake 2, que saiu posteriormente no Nokia 3310. Nesse, além da cobrinha se parecer mais com uma cobra, o jogador também podia coletar bônus para fazer mais pontos.</p1><br><br><br><img src="/imagens/imagem_2023-05-04_171333730.png" width="700" height="350" align=center>
+     <h1 class="classe2"><br> É considerado o primeiro grande jogo mobile:</h1>
+     <p1 class="classe3" id="demo2">Snake foi um grande marco na indústria mobile e passou a ser considerado o primeiro jogo de celular de sucesso. Ele foi lançado em mais de 350 milhões de celulares em todo o mundo e foi o ponto de partida de uma indústria que hoje movimenta bilhões. Seu desenvolvedor, o finlandês Taneli Armanto, recebeu do Mobile Entertainment Forum (Fórum de Entretenimento Mobile, em tradução livre), uma premiação pela sua contribuição ao crescimento da indústria de entretenimento móvel.</p1>
+     <br><br>
+     <button class="btnA" type="button" onclick="document.getElementById('demo2').style.color='blue'">Mude a fonte para azul!</button>
+       <button class="btnV" type="button" onclick="document.getElementById('demo2').style.color='green'">Mude a fonte para verde!</button>
+              <button class="btnP" type="button" onclick="document.getElementById('demo2').style.color='black'">Mude a fonte para preto!</button>
+     <h1 class="classe2">O Snake (que ainda não se chamava Snake) antes de virar mobile:</h1>
+     <p1 class="classe3" id="demo1">Em 1976, o jogo foi desenvolvido pela Gremlin Interactive e batizado de Blockade. Lançado para os fliperamas, o jogo era monocromático e o personagem era movido pelas setas do teclado, porém sua única diferença era sua jogabilidade multiplayer. Seu objetivo também era o mesmo, cada personagem tinha que “comer” o que aparecia na tela e evitar choques contra os muros do cenário. Aquele que “comia” mais, ao mesmo tempo que mantinha o personagem ileso, era o vencedor. <br><br>O então Blockade fez tanto sucesso que acabou servindo de inspiração para desenvolvedores concorrentes anos depois, inclusive a Atari, que lançou o Worm em 1978. O jogo só ganhou uma versão single player em 1982 chamada Nibbler pela empresa de fliperamas e jukeboxes Rock-ola, que mais tarde lançou para computadores domésticos e para a própria Atari. </p1><br><br>
+<button class="btn" type="button" onclick="document.getElementById('demo1').style.fontSize='20px'">Diminua a fonte!</button>
+
+<button class="btn" type="button" onclick="document.getElementById('demo1').style.fontSize='45px'">Aumente a fonte!</button><br><br><br><br>
+
+     </div>
+    
+</body>
+</html>
